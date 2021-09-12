@@ -124,10 +124,6 @@ ROOT_PATH = os.path.dirname(__file__)
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-
-print("*"*50)
-print(PROJECT_ROOT)
-print("*"*50)
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
