@@ -22,6 +22,6 @@ from Cartões import views as Cards
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('view_flashcards/', Cards.Flashcard_show),
     re_path(r'^$', views.index, name='index'),
+    path('view_flashcards/', Cards.Flashcard_show),
 ]
