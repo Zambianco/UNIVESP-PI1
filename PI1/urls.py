@@ -23,5 +23,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     re_path(r'^$', views.index, name='index'),
     path('admin/', admin.site.urls),
-    path(r'^$view_flashcards/', Cards.Flashcard_show),
+    path('view_flashcards/', Cards.Flashcard_show, name='Flashcard_show'),
 ]
