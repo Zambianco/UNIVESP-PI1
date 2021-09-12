@@ -17,11 +17,11 @@ from django.contrib import admin
 from django.urls import path, include
 from django.urls import re_path
 from . import views
-from Cartões import views as CardsView
+from Cartões import views as Cards
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
+    path('view_flashcards/', Cards.Flashcard_show),
     re_path(r'^$', views.index, name='index'),
-    path('view_flashcards', CardsView.card_show),
 ]
