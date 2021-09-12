@@ -20,8 +20,8 @@ from . import views
 from Cartões import views as Cards
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     re_path(r'^$', views.index, name='index'),
+    path('admin/', admin.site.urls),
     path('view_flashcards/', Cards.Flashcard_show),
 ]
